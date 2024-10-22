@@ -17,16 +17,16 @@
           <div class="col-sm-12 col-md-4" style="margin-top: 20%";>
             <i class="fa-solid fa-coins"></i>
  
-            <form>
+            <form action="php/logon.php">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input type="email" class="form-control" id="exampleInputEmail1" name="emaillogin" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Senha</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <input type="password" class="form-control" name="passwordllogin" id="exampleInputPassword1">
                 </div class="button">
-                <a href="tela_inicial.html" style="margin-left: 35px;" type="submit" class="btn btn-dark" >Entrar</a>
+                <a href="tela_inicial.html" style="margin-left: 35px;"><button id="bo" type="submit" class="btn btn-dark" >Entrar</button> </a>
                 <a href="cad_usuario.html" style="margin-left: 2px;" type="submit" class="btn btn-dark" >Cadastrar</a>
                  
               </form>
