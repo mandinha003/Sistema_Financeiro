@@ -1,0 +1,46 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Categoria</title>
+        <link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+    <body>
+
+        
+        <div>
+            <h2>Cadastro de Categoria</h2>
+        </div>
+        
+        <i class="fa-solid fa-palette"></i>
+
+        <div class="container">
+            <form action="/cadastrar_categoria"method ="POST">
+                <label for="nome">Nome:</label><br>
+                <input type="text" class="form-control" id="catname" name="catname" aria-describedby="emailHelp"><br><br>
+     
+                <div class="mb-3">
+                    <label for="categoria" class="form-label">Tipo de Categoria</label><br>
+                    <input type="number" class="form-control" id="tipocat" name="tipocat" aria-describedby="emailHelp">
+                  
+                </div>
+                </select><br><br>
+
+                <label for="descricao">Descrição:</label><br>
+                <input type="text" class="form-control" id="catdesc" name="catdesc" aria-describedby="emailHelp"><br><br>
+     
+                <button><a style="margin-left: 10% ;" class="btn btn-danger" href="tela_inicial.html" role="button">voltar</a></button>
+                <button type="submit" class="btn btn-success">Lançar </button>
+              
+            </form>
+        </div>
+    
+       
+
+
+
+
+    </body>
+    </html>
