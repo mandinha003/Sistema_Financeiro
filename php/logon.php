@@ -15,7 +15,9 @@ $email_banco = $result['email'];
 $senha_banco = $result['senha'];
 
 if($email == $email_banco && $senhalogin == $senha_banco){
-    hearder ('location: ../tela_inicial.html');    
+    session_start();
+    $_SESSION['id'] =  $result['id_usuario'];
+    header('location:  ../tela_inicial.php');    
 } else {
     echo "<script> alert('Usuário ou senha inválida'); history.back(); </script>";
 }

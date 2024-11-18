@@ -13,7 +13,7 @@
     </div>
                    
         <div class="container">
-          <form action="/cadastrar_lancamento" method="POST">
+          <form action="categoria.html" method="POST">
               <label for="data_lancamento">Data do Lançamento:</label><br>
               <input type="date" id="data_lancamento" name="data_lancamento" required><br><br>
        
@@ -34,8 +34,8 @@
                   <option value="2">Categoria 2</option>
               </select><br><br>
        
-              <button type="submit" id="CL">Cadastrar Lançamento</button>
-              <button type="submit" id="V"><a href="http://127.0.0.1:5500/categoria.html">Voltar</a></button>
+              <button type="submit">Cadastrar Lançamento</button>
+              <button type="submit"><a href="categoria.html">Voltar</a></button>
           </form>
       </div>
 

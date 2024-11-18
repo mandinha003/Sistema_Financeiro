@@ -10,14 +10,32 @@
 </head>
 <body>
  <div id="tela">
-    <h2>Bem vindo ao Sistema</h2>
+    <h2><?php
+
+include 'php/conexao.php';
+session_start();
+if (isset($_SESSION['id'])) {
+  $id = $_SESSION['id'];
+  $sql = "SELECT * FROM tb_user WHERE id_usuario = $id ";
+
+  $query = $conexao ->query($sql);
+  $result = $query ->fetch_assoc();
+
+  echo  $result['nome']."!";
+
+   } else{
+    echo "<script> alert('Usuário não está logado'); history.back(); </script>";
+   }
+?>
+        
+    Bem vindo ao Sistema</h2>
     <h4>
     <p>Escolha uma das opções</p>
     </h4>
     <div>
         <a class="btn btn-danger" href="index.html" role="button">Voltar ao login</a>
-        <a href="cad_usuario.html" type="button" class="btn btn-dark">Cadastrar Categoria</a>
-        <a href="index.html" type="button" class="btn btn-dark">Registrar um Lançamento</a>
+        <a href="categoria.html" type="button" class="btn btn-dark">Cadastrar Categoria</a>
+        <a href="lançamento.php" type="button" class="btn btn-dark">Registrar um Lançamento</a>
     </div>
 
  </div>
