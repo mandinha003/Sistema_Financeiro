@@ -8,24 +8,7 @@ body{
 
 }
 
-
-#tela{
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    margin: 200px;
-    font-size: 15px;
-    font-weight: bold;
-    color: rgb(255, 255, 255); 
-    border: 2px solid #0000009a; 
-    border-radius: 15px;
-    padding: 25px;
-    width: 980px;   
-  
-    
-
-}
-
-    form {
+ form {
         background-color: #fff;
         padding: 15px;
         margin: 0 auto;
@@ -45,15 +28,33 @@ body{
      
     
     button {
-        color: #ffffff;
         padding: 5px 10px;
         border: none;
         border-radius: 2px;
         cursor: pointer;
         font-size: 1.2em;
-        transition: 0.3s ease;
+        transition:  0.3s ease;
     }
 
     .img_cad{
         margin-top: 50%;
     }
+
+
+#tela{
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 200px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(255, 255, 255); 
+    border: 2px solid #0000009a; 
+    border-radius: 15px;
+    padding: 25px;
+    width: 980px;   
+  
+    
+
+}
+
+   
