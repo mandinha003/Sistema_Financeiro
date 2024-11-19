@@ -9,8 +9,26 @@
 
     </head>
     <body>
+        <div class="container text-center">
+            <div style="color: white">
+              <?php
+              include 'php/conexao.php';
+              session_start();
+              if (isset($_SESSION['id'])) {
+                  $id = $_SESSION['id'];
+                  $sql = "SELECT * FROM tb_user WHERE id_usuario = $id";
+                  $query = $conexao->query($sql);
+                  $resultado = $query->fetch_assoc();
+                  echo "Olá", $resultado['nome']."!";
+              }else {
+                  echo "<script> alert('Você não está logado!'); history.back(); </script>";
+              }
+              ?>
+              <a class="btn btn-primary" href="php/logout.php" role="button">Sair</a>
+       
+            </div>
+    
 
-        
         <i class="fa-solid fa-palette"></i>
 
         <div class="container" >

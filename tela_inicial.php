@@ -34,7 +34,7 @@ if (isset($_SESSION['id'])) {
     </h4>
     <div>
         <a class="btn btn-danger" href="index.html" role="button">Voltar ao login</a>
-        <a href="categoria.html" type="button" class="btn btn-dark">Cadastrar Categoria</a>
+        <a href="categoria.php" type="button" class="btn btn-dark">Cadastrar Categoria</a>
         <a href="lançamento.php" type="button" class="btn btn-dark">Registrar um Lançamento</a>
     </div>
 

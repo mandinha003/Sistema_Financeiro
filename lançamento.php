@@ -13,7 +13,7 @@
        
                    
         <div class="container">
-          <form action="categoria.html" method="POST">
+          <form action="categoria.php" method="POST">
              <h2>Cadastro de Lançamento</h2>
    
 
@@ -38,7 +38,7 @@
               </select><br><br>
        
               <button type="submit" class="btn btn-dark">Cadastrar Lançamento</button>
-              <button type="submit" href="categoria.html" class="btn btn-dark">Voltar</button>
+              <button type="submit" href="categoria.php" class="btn btn-dark">Voltar</button>
           </form>
       </div>
 

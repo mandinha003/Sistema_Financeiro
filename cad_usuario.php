@@ -22,7 +22,7 @@
             $resultado = $query->fetch_assoc();
             echo "Olá", $resultado['nome']."!";
         }else {
-            echo "<script> alert('Você não está logado!'); history.back(); </script>";
+            echo "<script> alert('Você não está logado! '); history.back(); </script>";
         }
         ?>
         <a class="btn btn-primary" href="logout.php" role="button">Sair</a>
